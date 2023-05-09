@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-f*oqek5z0#*v&@1cf-e^!q*^_z(!9m-%_=o$vu@gzhxp8kf$&4"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 os.environ['OPENCAGE_API_KEY'] = 'edc03ada57624e9da83423f3ff00706a'
 
@@ -130,7 +130,7 @@ ROOT_URLCONF = "event_management.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -254,5 +254,5 @@ MEDIA_URL = "/media/"
 # # SESSION_COOKIE_DOMAIN = None
 # SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 # SESSION_COOKIE_DOMAIN = 'localhost'
-HOSTNAME = 'http://127.0.0.1:8000/'
+HOSTNAME = 'http://anwareventty.pythonanywhere.com/'
      

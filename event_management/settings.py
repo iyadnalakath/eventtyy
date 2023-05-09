@@ -210,12 +210,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
 
+STATIC_URL = '/static/'
+
+# Location where Django collects all static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Location where we will store our static files
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = "/var/www/example.com/static/"
 
-VENV_PATH = os.path.dirname(BASE_DIR)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# STATIC_URL = "static/"
+
+# # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# STATIC_ROOT = "/var/www/example.com/static/"
+
+# VENV_PATH = os.path.dirname(BASE_DIR)
 
 # STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
 
